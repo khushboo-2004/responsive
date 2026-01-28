@@ -18,8 +18,13 @@ html {
   color: rgb(240, 234, 234);
 }
 
+section {
+  max-width: 2000px;
+}
+
 main {
   width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 0rem;
@@ -51,20 +56,45 @@ main section .bottom .text {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  margin-top: 3rem;
 }
 main section .bottom .text h1 {
   font-weight: 400;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   line-height: 3rem;
+  text-transform: uppercase;
 }
 main section .bottom .text p {
   opacity: 0.7;
-  font-size: 1.4rem;
-  font-weight: 200;
+  font-size: 1.2rem;
+  font-weight: 300;
   line-height: 2rem;
 }
 main section .bottom .text button {
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 1.7rem;
+}
+
+@media (min-width: 900px) {
+  main section {
+    flex-direction: row;
+  }
+  main section .top, main section .bottom {
+    width: 50%;
+  }
+  main section .bottom {
+    justify-content: space-between;
+    padding: 3rem;
+  }
+  main section .bottom .text {
+    gap: 2rem;
+  }
+  main section .bottom .text h1 {
+    font-size: 3.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
